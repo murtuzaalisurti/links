@@ -25,7 +25,7 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 .title{
     height: 10rem;
     font-size: 6rem;
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
     font-family: 'Oswald', sans-serif;
     background-color: black;
     color: white;
@@ -52,6 +52,7 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
     font-family: 'Nunito', sans-serif;
     /* font-weight: bold; */
     position: relative;
+    transition: background-color 0.3s ease-out;
 }
 .links .category:last-child{
     margin-bottom: 20rem;
@@ -61,6 +62,8 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 a{
     text-decoration: none;
     color: black;
+    background-color: white;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 footer{
     margin-bottom: 2rem;

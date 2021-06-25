@@ -48,22 +48,19 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
     padding: 0.5rem;
     text-align: center;
     font-size: 2rem;
-    /* font-family: 'Cutive Mono', monospace; */
     font-family: 'Nunito', sans-serif;
-    /* font-weight: bold; */
     position: relative;
     transition: background-color 0.3s ease-out;
 }
 .links .category:last-child{
     margin-bottom: 20rem;
 }
-
-
 a{
     text-decoration: none;
     color: black;
     background-color: white;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    /* transition: background-color 0.3s ease-out, color 0.3s ease-out; */
 }
 footer{
     margin-bottom: 2rem;
@@ -76,22 +73,23 @@ footer{
 .text2{
     font-size: 1.2rem;
 }
-
 .text1 i{
     color: red;
 }
 .text1 a{
     font-weight: bold;
 }
-
 @media (max-width: 50rem) {
     .container{
         width: 30rem;
     }
 }
 @media (hover: hover) {
-    .link a:hover{
+    .category a:hover{
         background-color: black;
         color: white;
+    }
+    .category a:hover div{
+        background-color: black;
     }
 }

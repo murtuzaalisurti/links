@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body, .title, .links, .link, .ctg_title{
+body, .title, .links, .link, .ctg_title, .text1, .text2{
     display: flex;
     justify-content: center;
 }
@@ -19,7 +19,7 @@ body, .title, .links, .link, .ctg_title{
     flex-flow: column;
 }
 
-.title, .links, .link, .ctg_title{
+.title, .links, .link, .ctg_title, .text1, .text2{
     align-items: center;
 }
 .title{
@@ -53,14 +53,42 @@ body, .title, .links, .link, .ctg_title{
     /* font-weight: bold; */
     position: relative;
 }
+.links .category:last-child{
+    margin-bottom: 20rem;
+}
 
 
 a{
     text-decoration: none;
     color: black;
 }
+footer{
+    margin-bottom: 2rem;
+}
+.text1, .text2{
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.text2{
+    font-size: 1.2rem;
+}
+
+.text1 i{
+    color: red;
+}
+.text1 a{
+    font-weight: bold;
+}
+
 @media (max-width: 50rem) {
     .container{
         width: 30rem;
+    }
+}
+@media (hover: hover) {
+    .link a:hover{
+        background-color: black;
+        color: white;
     }
 }

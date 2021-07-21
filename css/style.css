@@ -71,6 +71,10 @@ a{
     background-color: white;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
+.css-tricks-star{
+    fill: black;
+    transition: fill 0.3s ease-out;
+}
 footer{
     margin-bottom: 2rem;
 }
@@ -97,6 +101,9 @@ footer{
     .category a:hover{
         background-color: black;
         color: white;
+    }
+    .category a:hover .css-tricks-star{
+        fill: white;
     }
     .category a:hover div.link{
         background-color: black;

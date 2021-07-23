@@ -15,6 +15,43 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 .container{
     width: 50rem;
 }
+.profile-pic-contains{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic{
+    height: 15rem;
+    width: 15rem;
+}
+.profile-pic img{
+    width: 100%;
+    height: auto;
+}
+.name{
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.social-icons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.social-icons a{
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    margin: 0 0.2rem;
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+}
 .links{
     flex-flow: column;
 }
@@ -36,15 +73,16 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
     font-family: 'Roboto Condensed', sans-serif;
 }
 .ctg_title{
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .link{
     width: 100%;
     background-color: white;
     border: 2px solid black;
-    margin-top: 2rem;
-    padding: 1.6rem 0.5rem;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    padding: 1.6rem 0.9rem;
     text-align: center;
     font-size: 2rem;
     font-family: 'Nunito', sans-serif;
@@ -56,14 +94,14 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 }
 .link .banner{
     position: absolute;
-    top: -18%;
-    left: 4%;
+    top: -14px;
+    left: 20px;
     background-color: white;
     transform: scale(1);
     transition: transform 0.3s ease-out;
     font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
-    padding: 0rem 0.4rem;
+    padding: 0rem 0.6rem;
 }
 a{
     text-decoration: none;
@@ -110,5 +148,8 @@ footer{
     }
     .category a:hover .banner{
         transform: scale(0);
+    }
+    .social-icons a:hover{
+        transform: scale(1.1);
     }
 }

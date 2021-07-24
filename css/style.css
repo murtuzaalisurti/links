@@ -6,12 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.bg{
     background: rgb(255,140,107);
     background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgba(255,228,168,1) 100%);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 0;
+}
+main{
+    z-index: 2;
 }
 body, .title, .links, .link, .ctg_title, .text1, .text2{
     display: flex;
@@ -172,3 +178,8 @@ footer{
         color: white;
     }
 }
+/* @media (max-width: 40rem) {
+    body{
+        background-attachment: scroll;
+    }
+} */

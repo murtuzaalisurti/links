@@ -6,7 +6,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background: rgb(255,140,107);
+    background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgba(255,228,168,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 body, .title, .links, .link, .ctg_title, .text1, .text2{
     display: flex;
     justify-content: center;
@@ -28,6 +34,7 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 }
 .profile-pic img{
     width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .name{
@@ -50,7 +57,8 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
     padding: 1rem 1rem;
     margin: 0 0.2rem;
     transform: scale(1);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, color 0.2s ease-out;
+    background-color: transparent;
 }
 .links{
     flex-flow: column;
@@ -78,25 +86,29 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 
 .link{
     width: 100%;
-    background-color: white;
-    border: 2px solid black;
+    background-color: transparent;
+    border: 2px solid rgb(68, 68, 68);
     border-radius: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     padding: 1.6rem 0.9rem;
     text-align: center;
     font-size: 2rem;
     font-family: 'Nunito', sans-serif;
+    transform: scale(1);
     position: relative;
-    transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out;
 }
 .links .category:last-child{
     margin-bottom: 20rem;
 }
+.links .category:first-child .link{
+    margin-top: 5rem;
+}
 .link .banner{
     position: absolute;
-    top: -14px;
-    left: 20px;
-    background-color: white;
+    top: -22px;
+    left: 10px;
+    background-color: transparent;
     transform: scale(1);
     transition: transform 0.3s ease-out;
     font-size: 1.5rem;
@@ -124,11 +136,15 @@ footer{
 .text2{
     font-size: 1.2rem;
 }
+.text2 a{
+    background-color: transparent;
+}
 .text1 i{
     color: red;
 }
 .text1 a{
     font-weight: bold;
+    background-color: transparent;
 }
 @media (max-width: 50rem) {
     .container{
@@ -144,12 +160,15 @@ footer{
         fill: white;
     }
     .category a:hover div.link{
+        border-color: white;
         background-color: black;
+        transform: scale(0.98);
     }
     .category a:hover .banner{
         transform: scale(0);
     }
     .social-icons a:hover{
         transform: scale(1.1);
+        color: white;
     }
 }

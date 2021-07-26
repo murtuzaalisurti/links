@@ -84,7 +84,7 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
 .category{
     width: 100%;
     font-size: 4rem;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .ctg_title{
     margin-top: 5rem;

@@ -121,6 +121,11 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
     font-family: 'Oswald', sans-serif;
     padding: 0rem 0.6rem;
 }
+.link .date-banner{
+    right: 10px;
+    text-align: right;
+    font-size: 1.2rem;
+}
 a{
     text-decoration: none;
     color: black;

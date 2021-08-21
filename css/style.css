@@ -1,185 +1,260 @@
-:root{
-    font-size: 62.5%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.bg{
-    background: rgb(255,140,107);
-    background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgba(255,228,168,1) 100%);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 0;
-}
-main{
-    z-index: 2;
-}
-body, .title, .links, .link, .ctg_title, .text1, .text2{
-    display: flex;
-    justify-content: center;
+:root {
+  font-size: 62.5%;
 }
 
-.container{
-    width: 50rem;
-}
-.profile-pic-contains{
-    margin-top: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.profile-pic{
-    height: 15rem;
-    width: 15rem;
-}
-.profile-pic img{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-.name{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
-.social-icons{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.social-icons a{
-    font-size: 3rem;
-    padding: 1rem 1rem;
-    margin: 0 0.2rem;
-    transform: scale(1);
-    transition: transform 0.2s ease-in, color 0.2s ease-out;
-    background-color: transparent;
-}
-.links{
-    flex-flow: column;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.title, .links, .link, .ctg_title, .text1, .text2{
-    align-items: center;
+.bg {
+  background: #ff8c6b;
+  background: linear-gradient(335deg, #ff8c6b 0%, #ffe4a8 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 0;
 }
-.title{
-    height: 10rem;
-    font-size: 6rem;
-    margin: 2rem 0rem;
-    font-family: 'Oswald', sans-serif;
+
+main {
+  z-index: 2;
+}
+
+body, .title, .links, .link, .ctg_title, .text1, .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 50rem;
+}
+
+.profile-pic-contains {
+  margin-top: 5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-pic {
+  height: 15rem;
+  width: 15rem;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name a {
+  background-color: transparent;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.social-icons a {
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  margin: 0 0.2rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-in;
+  transition: color 0.2s ease-out, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, color 0.2s ease-out;
+  transition: transform 0.2s ease-in, color 0.2s ease-out, -webkit-transform 0.2s ease-in;
+  background-color: transparent;
+}
+
+.links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.title, .links, .link, .ctg_title, .text1, .text2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  height: 10rem;
+  font-size: 6rem;
+  margin: 2rem 0rem;
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.category {
+  width: 100%;
+  font-size: 4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.ctg_title {
+  margin-top: 5rem;
+}
+
+.link {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #444444;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  padding: 1.6rem 0.9rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  position: relative;
+  -webkit-transition: background-color 0.3s ease-out, border 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: background-color 0.3s ease-out, border 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out;
+  transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.links .category:last-child {
+  margin-bottom: 20rem;
+}
+
+.links .category:first-child .link {
+  margin-top: 5rem;
+}
+
+.link .banner {
+  position: absolute;
+  top: -22px;
+  left: 10px;
+  background-color: transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  padding: 0rem 0.6rem;
+}
+
+.link .date-banner {
+  right: 10px;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.css-tricks-star {
+  fill: black;
+  -webkit-transition: fill 0.3s ease-out;
+  transition: fill 0.3s ease-out;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+.text1, .text2 {
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.text2 {
+  font-size: 1.2rem;
+}
+
+.text2 a {
+  background-color: transparent;
+}
+
+.text1 i {
+  color: red;
+}
+
+.text1 a {
+  font-weight: bold;
+  background-color: transparent;
+}
+
+@media (max-width: 50rem) {
+  .container {
+    width: 30rem;
+  }
+}
+
+@media (hover: hover) {
+  .category a:hover {
     background-color: black;
     color: white;
-}
-.category{
-    width: 100%;
-    font-size: 4rem;
-    font-family: 'Inter', sans-serif;
-}
-.ctg_title{
-    margin-top: 5rem;
-}
-
-.link{
-    width: 100%;
-    background-color: transparent;
-    border: 2px solid rgb(68, 68, 68);
-    border-radius: 1rem;
-    margin-top: 3rem;
-    padding: 1.6rem 0.9rem;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    transform: scale(1);
-    position: relative;
-    transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out;
-}
-.links .category:last-child{
-    margin-bottom: 20rem;
-}
-.links .category:first-child .link{
-    margin-top: 5rem;
-}
-.link .banner{
-    position: absolute;
-    top: -22px;
-    left: 10px;
-    background-color: transparent;
-    transform: scale(1);
-    transition: transform 0.3s ease-out;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    padding: 0rem 0.6rem;
-}
-.link .date-banner{
-    right: 10px;
-    text-align: right;
-    font-size: 1.2rem;
-}
-a{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    transition: color 0.3s ease-out, background-color 0.3s ease-out;
-}
-.css-tricks-star{
-    fill: black;
-    transition: fill 0.3s ease-out;
-}
-footer{
-    margin-bottom: 2rem;
-}
-.text1, .text2{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-}
-.text2{
-    font-size: 1.2rem;
-}
-.text2 a{
-    background-color: transparent;
-}
-.text1 i{
-    color: red;
-}
-.text1 a{
-    font-weight: bold;
-    background-color: transparent;
-}
-@media (max-width: 50rem) {
-    .container{
-        width: 30rem;
-    }
-}
-@media (hover: hover) {
-    .category a:hover{
-        background-color: black;
-        color: white;
-    }
-    .category a:hover .css-tricks-star{
-        fill: white;
-    }
-    .category a:hover div.link{
-        border-color: white;
-        background-color: black;
-        transform: scale(0.98);
-    }
-    .category a:hover .banner{
-        transform: scale(0);
-    }
-    .social-icons a:hover{
-        transform: scale(1.1);
-        color: white;
-    }
+  }
+  .category a:hover .css-tricks-star {
+    fill: white;
+  }
+  .category a:hover div.link {
+    border-color: white;
+    background-color: black;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .category a:hover .banner {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .social-icons a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: white;
+  }
 }

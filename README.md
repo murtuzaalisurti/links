@@ -6,7 +6,7 @@
 
 ## Want to contribute?
 
-Here are some [guidelines](https://github.com/murtuzaalisurti/murtuzaalisurti.github.io/links/blob/master/contributing.md)!
+Here are some [guidelines](https://github.com/murtuzaalisurti/links/blob/master/contributing.md)!
 
 ---
 

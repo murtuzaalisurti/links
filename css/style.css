@@ -75,8 +75,45 @@ body, .title, .links, .link, .ctg_title, .text1, .text2 {
           justify-content: center;
 }
 
-.name a {
+.name a, .my_portfolio a {
   background-color: transparent;
+}
+
+.my_portfolio {
+  font-size: 1.4rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my_portfolio i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5rem;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.my_portfolio a:hover ~ i {
+  -webkit-transform: translateX(0.35rem);
+          transform: translateX(0.35rem);
 }
 
 .social-icons {

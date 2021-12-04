@@ -111,7 +111,7 @@ body, .title, .links, .link, .ctg_title, .text1, .text2 {
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-.my_portfolio a:hover ~ i {
+.my_portfolio a:hover + i {
   -webkit-transform: translateX(0.35rem);
           transform: translateX(0.35rem);
 }

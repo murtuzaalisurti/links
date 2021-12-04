@@ -72,7 +72,7 @@ body, .title, .links, .link, .ctg_title, .text1, .text2{
     transform: translateX(0);
     transition: transform 0.25s ease-out;
 }
-.my_portfolio a:hover ~ i{
+.my_portfolio a:hover + i{
     transform: translateX(0.35rem);
 }
 .social-icons{

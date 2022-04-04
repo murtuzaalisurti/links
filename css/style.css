@@ -9,6 +9,11 @@
           box-sizing: border-box;
 }
 
+html {
+  scrollbar-color: rgba(255, 255, 255, 0.5) black;
+  scrollbar-width: thin;
+}
+
 .bg {
   background: #ff8c6b;
   background: linear-gradient(335deg, #ff8c6b 0%, #ffe4a8 100%);
@@ -31,6 +36,21 @@ body, .title, .links, .link, .ctg_title, .text1, .text2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(335deg, #ff906e 0%, #ffcc98 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
 
 .container {

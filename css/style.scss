@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+	scrollbar-color: rgba(255, 255, 255, 0.5) black;
+	scrollbar-width: thin;
+}
 .bg{
     background: rgb(255,140,107);
     background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgba(255,228,168,1) 100%);
@@ -22,6 +26,24 @@ main{
 body, .title, .links, .link, .ctg_title, .text1, .text2{
     display: flex;
     justify-content: center;
+}
+
+body {
+
+    &::-webkit-scrollbar{
+        width: 0.7rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: linear-gradient(335deg, #ff906e 0%, #ffcc98 100%);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0.5rem;
+    }
 }
 
 .container{

@@ -258,6 +258,21 @@ a {
   transition: fill 0.3s ease-out;
 }
 
+.syntackle-logo {
+  height: 18px;
+  width: auto;
+}
+
+.syntackle-logo:first-child {
+  fill: transparent;
+}
+
+.syntackle-logo rect:not(:first-of-type) {
+  fill: black;
+  -webkit-transition: fill 0.3s ease-out;
+  transition: fill 0.3s ease-out;
+}
+
 .support-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,7 +415,7 @@ footer {
     background-color: black;
     color: white;
   }
-  .category a:hover .css-tricks-star {
+  .category a:hover .css-tricks-star, .category a:hover .syntackle-logo rect:not(:first-of-type) {
     fill: white;
   }
   .category a:hover div.link {

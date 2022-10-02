@@ -66,15 +66,21 @@ body {
     height: auto;
 }
 .name{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    margin-top: 1.5rem;
+    padding-top: 1.8rem;
     display: flex;
     justify-content: center;
 }
 .name a, .my_portfolio a{
     background-color: transparent;
+}
+.occupation {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
 }
 .my_portfolio{
     font-size: 1.4rem;

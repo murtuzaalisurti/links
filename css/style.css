@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   font-size: 62.5%;
 }
@@ -15,8 +22,9 @@ html {
 }
 
 .bg {
-  background: #ff8c6b;
-  background: linear-gradient(335deg, #ff8c6b 0%, #ffe4a8 100%);
+  background: rgb(255, 140, 107);
+  background: -o-linear-gradient(115deg, rgb(255, 140, 107) 0%, rgb(255, 228, 168) 100%);
+  background: linear-gradient(335deg, rgb(255, 140, 107) 0%, rgb(255, 228, 168) 100%);
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -41,13 +49,11 @@ body, .title, .links, .link, .ctg_title, .text1, .text2 {
 body::-webkit-scrollbar {
   width: 0.7rem;
 }
-
 body::-webkit-scrollbar-track {
   background: linear-gradient(335deg, #ff906e 0%, #ffcc98 100%);
   background-repeat: no-repeat;
   background-position: center;
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
@@ -83,10 +89,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .name {
-  font-size: 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
-  margin-top: 1.5rem;
+  padding-top: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,9 +105,20 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
+.occupation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+}
+
 .my_portfolio {
   font-size: 1.4rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin-top: 0.5rem;
   display: -webkit-box;
@@ -124,15 +141,18 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
   margin-left: 0.5rem;
   -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: -webkit-transform 0.25s ease-out;
   transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .my_portfolio a:hover + i {
   -webkit-transform: translateX(0.35rem);
+      -ms-transform: translateX(0.35rem);
           transform: translateX(0.35rem);
 }
 
@@ -155,9 +175,11 @@ body::-webkit-scrollbar-thumb {
   padding: 1rem 1rem;
   margin: 0 0.2rem;
   -webkit-transform: scale(1);
+      -ms-transform: scale(1);
           transform: scale(1);
   -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-in;
   transition: color 0.2s ease-out, -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in, color 0.2s ease-out;
   transition: transform 0.2s ease-in, color 0.2s ease-out;
   transition: transform 0.2s ease-in, color 0.2s ease-out, -webkit-transform 0.2s ease-in;
   background-color: transparent;
@@ -180,7 +202,7 @@ body::-webkit-scrollbar-thumb {
   height: 10rem;
   font-size: 6rem;
   margin: 2rem 0rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: black;
   color: white;
 }
@@ -188,7 +210,7 @@ body::-webkit-scrollbar-thumb {
 .category {
   width: 100%;
   font-size: 4rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .ctg_title {
@@ -198,18 +220,20 @@ body::-webkit-scrollbar-thumb {
 .link {
   width: 100%;
   background-color: transparent;
-  border: 2px solid #444444;
+  border: 2px solid rgb(68, 68, 68);
   border-radius: 1rem;
   margin-top: 3rem;
   padding: 1.6rem 0.9rem;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-transform: scale(1);
+      -ms-transform: scale(1);
           transform: scale(1);
   position: relative;
   -webkit-transition: background-color 0.3s ease-out, border 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: background-color 0.3s ease-out, border 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out;
   transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out;
   transition: background-color 0.3s ease-out, border 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
@@ -228,13 +252,15 @@ body::-webkit-scrollbar-thumb {
   left: 10px;
   background-color: transparent;
   -webkit-transform: scale(1);
+      -ms-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   font-size: 1.5rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   padding: 0rem 0.6rem;
 }
 
@@ -249,12 +275,14 @@ a {
   color: black;
   background-color: white;
   -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out, background-color 0.3s ease-out;
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 
 .css-tricks-star {
   fill: black;
   -webkit-transition: fill 0.3s ease-out;
+  -o-transition: fill 0.3s ease-out;
   transition: fill 0.3s ease-out;
 }
 
@@ -262,14 +290,13 @@ a {
   height: 18px;
   width: auto;
 }
-
 .syntackle-logo:first-child {
   fill: transparent;
 }
-
 .syntackle-logo rect:not(:first-of-type) {
   fill: black;
   -webkit-transition: fill 0.3s ease-out;
+  -o-transition: fill 0.3s ease-out;
   transition: fill 0.3s ease-out;
 }
 
@@ -286,7 +313,6 @@ a {
 .support {
   position: relative;
 }
-
 .support::before {
   position: absolute;
   content: attr(data-bmc-link);
@@ -296,6 +322,7 @@ a {
   height: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-7rem);
+      -ms-transform: translateX(-50%) translateY(-7rem);
           transform: translateX(-50%) translateY(-7rem);
   background-color: black;
   color: white;
@@ -310,11 +337,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   opacity: 0;
   z-index: -2;
 }
-
 .support::after {
   position: absolute;
   content: "";
@@ -328,30 +354,32 @@ a {
   border-right: 3rem solid transparent;
   border-top: 3rem solid black;
   -webkit-transform: translateX(-50%) translateY(-4rem);
+      -ms-transform: translateX(-50%) translateY(-4rem);
           transform: translateX(-50%) translateY(-4rem);
   opacity: 0;
   z-index: -4;
 }
-
 .support:hover::before, .support:hover::after {
   opacity: 1;
   -webkit-transform: translateX(-50%) translateY(-8rem);
+      -ms-transform: translateX(-50%) translateY(-8rem);
           transform: translateX(-50%) translateY(-8rem);
   -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.3s ease-out;
   transition: opacity 0.1s ease-out, -webkit-transform 0.3s ease-out;
+  -o-transition: opacity 0.1s ease-out, transform 0.3s ease-out;
   transition: opacity 0.1s ease-out, transform 0.3s ease-out;
   transition: opacity 0.1s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
-
 .support:hover::after {
   -webkit-transform: translateX(-50%) translateY(-4.5rem);
+      -ms-transform: translateX(-50%) translateY(-4.5rem);
           transform: translateX(-50%) translateY(-4.5rem);
   -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.3s ease-out;
   transition: opacity 0.5s ease-out, -webkit-transform 0.3s ease-out;
+  -o-transition: opacity 0.5s ease-out, transform 0.3s ease-out;
   transition: opacity 0.5s ease-out, transform 0.3s ease-out;
   transition: opacity 0.5s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
-
 .support svg {
   height: 5rem;
   width: 5rem;
@@ -362,14 +390,13 @@ a {
           box-shadow: 0.5rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
   -webkit-transition: border 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
   transition: border 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+  -o-transition: border 0.3s ease-out, box-shadow 0.3s ease-out;
   transition: border 0.3s ease-out, box-shadow 0.3s ease-out;
   transition: border 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
 }
-
 .support svg path.logo-coffee {
   fill: rgba(255, 255, 255, 0.7);
 }
-
 .support svg:hover {
   border: 0.2rem solid black;
   -webkit-box-shadow: 1rem 1.5rem 3.5rem 0 rgba(0, 0, 0, 0.45);
@@ -383,7 +410,7 @@ footer {
 
 .text1, .text2 {
   font-size: 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
 }
 
@@ -409,7 +436,6 @@ footer {
     width: 30rem;
   }
 }
-
 @media (hover: hover) {
   .category a:hover {
     background-color: black;
@@ -422,14 +448,17 @@ footer {
     border-color: white;
     background-color: black;
     -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
             transform: scale(0.98);
   }
   .category a:hover .banner {
     -webkit-transform: scale(0);
+        -ms-transform: scale(0);
             transform: scale(0);
   }
   .social-icons a:hover {
     -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
             transform: scale(1.1);
     color: white;
   }
